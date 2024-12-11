@@ -21,7 +21,7 @@ jobs:
       run: sudo docker login -u $DOCKER_USERNAME -p $DOCKER_PASSWORD
       
     - name: Build the Docker image
-      run: sudo docker build -t toybayev2/flask-template-endterm:latest
+      run: sudo docker build -t toybayev2/flask-template-endterm:latest .
 
     - name: Push to DockerHub
       run: sudo docker push toybayev2/flask-template-endterm:latest
